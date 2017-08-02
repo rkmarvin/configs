@@ -15,14 +15,16 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
+Bundle 'edkolev/tmuxline.vim'
 
 call vundle#end()
 
 "-------------
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tmuxline#enabled = 0
+
 let g:airline_theme='minimalist'
 set laststatus=2
-
 
 "-------------
 
