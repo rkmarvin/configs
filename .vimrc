@@ -5,6 +5,13 @@ set hidden
 set path+=**
 set wildmenu
 
+"solarized theme
+"install from here
+"https://github.com/altercation/vim-colors-solarized
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
