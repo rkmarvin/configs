@@ -1,3 +1,6 @@
+export TERM="screen-256color"
+alias tmux="tmux -2"
+
 alias skazka='cd /Users/$USER/Documents/projects/skazka && vagrant up && vagrant ssh'
 alias skazka_suspend='cd /Users/$USER/Documents/projects/skazka && vagrant suspend'
 alias minecraft='java -jar /Users/$USER/Applications/TLauncher.jar'
