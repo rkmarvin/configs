@@ -21,3 +21,5 @@ setopt menucomplete
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 
 alias vim='/usr/local/bin/vim'
+
+alias dockAddSeparator="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; killall Dock"

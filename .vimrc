@@ -1,4 +1,9 @@
+"solarized theme
+"install from here
+"https://github.com/altercation/vim-colors-solarized
 set t_Co=256
+set background=dark
+colorscheme solarized
 let g:solarized_termcolors=256
 
 
@@ -9,12 +14,6 @@ set hidden
 set path+=**
 set wildmenu
 
-"solarized theme
-"install from here
-"https://github.com/altercation/vim-colors-solarized
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -27,6 +26,7 @@ Plugin 'vim-ctrlspace/vim-ctrlspace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Bundle 'edkolev/tmuxline.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
