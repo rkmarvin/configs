@@ -48,8 +48,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-nnoremap <F3> :NERDTreeToggle<CR>
-map <F4> :TagbarToggle<CR>
+nnoremap <Enter> :NERDTreeToggle<CR>
+nnoremap ] :TagbarToggle<CR>
 let g:tagbar_autofocus = 0
 
 let NERDTreeIgnore = ['\.pyc$']
