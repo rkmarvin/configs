@@ -12,33 +12,36 @@ syntax on
 set nocompatible
 set hidden
 set path+=**
-set tags=tags
+set tags=tags.vim
 set wildmenu
 
 
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
-"Plugin 'gmarik/Vundle.vim'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 "Plugin 'scrooloose/nerdtree'
-"Plugin 'vim-airline/vim-airline'
-"Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'vim-ctrlspace/vim-ctrlspace'
 "Plugin 'tpope/vim-fugitive'
-"Plugin 'majutsushi/tagbar'
-"Bundle 'edkolev/tmuxline.vim'
+Plugin 'majutsushi/tagbar'
+Bundle 'edkolev/tmuxline.vim'
 "Plugin 'fatih/vim-go'
-"call vundle#end()
+Plugin 'nvie/vim-flake8' " use F7 to run flame8 on file https://vimawesome.com/plugin/vim-flake8
+call vundle#end()
+
+nnoremap [ :call Flake8()<CR>
 
 "-------------
-"let g:airline#extensions#tabline#enabled=1
-"let g:airline#extensions#tmuxline#enabled = 0
-"
-"let g:airline_theme='minimalist'
-"set laststatus=2
-"
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tmuxline#enabled = 0
+
+let g:airline_theme='minimalist'
+set laststatus=2
+
 ""-------------
 
-set colorcolumn=72
+set colorcolumn=79
 set number
 
 filetype plugin indent on

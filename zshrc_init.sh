@@ -11,7 +11,7 @@ alias indexingProject='ctags -R --fields=+l --languages=python --python-kinds=-i
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
-alias indexingProject="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags \$(python -c \"import os, sys; iter_lib=' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)); print '{} {}'.format('./', iter_lib)\")"
+alias indexingProject="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags.vim \$(python -c \"import os, sys; iter_lib=' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)); print '{} {}'.format('./', iter_lib)\")"
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
