@@ -18,16 +18,18 @@ set wildmenu
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'gmarik/Vundle.vim'
-"Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'vim-ctrlspace/vim-ctrlspace'
-"Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Bundle 'edkolev/tmuxline.vim'
-"Plugin 'fatih/vim-go'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nvie/vim-flake8' " use F7 to run flame8 on file https://vimawesome.com/plugin/vim-flake8
+
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'vim-ctrlspace/vim-ctrlspace'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'fatih/vim-go'
 call vundle#end()
 
 nnoremap [ :call Flake8()<CR>
@@ -65,3 +67,9 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 set mouse=a
 set ttymouse=xterm2
+
+" autocomplete speedup
+set complete-=i
+
+" autoremove wild whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
