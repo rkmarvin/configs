@@ -1,13 +1,15 @@
-"solarized theme
+" solarized theme
 ""install from here
 "https://github.com/altercation/vim-colors-solarized
+syntax on
+
 set t_Co=256
 set background=dark
-colorscheme solarized
+let g:solarized_termtrans = 1
+" colorscheme solarized
+colorscheme delek
 let g:solarized_termcolors=256
 
-
-syntax on
 
 set nocompatible
 set hidden
@@ -43,14 +45,14 @@ set laststatus=2
 
 ""-------------
 
-set colorcolumn=79
-set number
-
 filetype plugin indent on
 
+set number
 set tabstop=4
-set shiftwidth=4
 set expandtab
+set softtabstop=4
+set shiftwidth=4
+filetype indent on
 
 "nnoremap <Enter> :NERDTreeToggle<CR>
 nnoremap ] :TagbarToggle<CR>
