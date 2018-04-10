@@ -23,3 +23,4 @@ zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 alias vim='/usr/local/bin/vim'
 
 alias dockAddSeparator="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; killall Dock"
+alias myip="ifconfig en0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
