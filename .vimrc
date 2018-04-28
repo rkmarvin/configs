@@ -53,6 +53,7 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set colorcolumn=79
+set backspace=2
 filetype indent on
 
 "nnoremap <Enter> :NERDTreeToggle<CR>
