@@ -5,9 +5,11 @@ syntax on
 
 set t_Co=256
 set background=dark
+set guifont=DejaVu_Sans_Mono_for_Powerline:h12
 let g:solarized_termtrans = 1
 " colorscheme solarized
-colorscheme delek
+" colorscheme delek
+colorscheme space-vim-dark
 let g:solarized_termcolors=256
 
 
@@ -27,6 +29,7 @@ Bundle 'edkolev/tmuxline.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nvie/vim-flake8' " use F7 to run flame8 on file https://vimawesome.com/plugin/vim-flake8
+Plugin 'liuchengxu/space-vim-dark' " https://github.com/liuchengxu/space-vim-dark
 
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'vim-ctrlspace/vim-ctrlspace'
@@ -47,13 +50,13 @@ set laststatus=2
 
 filetype plugin indent on
 
-set number
 set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
 set colorcolumn=79
 set backspace=2
+set number relativenumber
 filetype indent on
 
 "nnoremap <Enter> :NERDTreeToggle<CR>
