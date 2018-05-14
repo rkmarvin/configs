@@ -2,23 +2,7 @@
 ""install from here
 "https://github.com/altercation/vim-colors-solarized
 syntax on
-
-set t_Co=256
-set background=dark
-set guifont=DejaVu_Sans_Mono_for_Powerline:h12
-let g:solarized_termtrans = 1
-" colorscheme solarized
-" colorscheme delek
-colorscheme space-vim-dark
-let g:solarized_termcolors=256
-
-
-set nocompatible
-set hidden
-set path+=**
-set tags=tags.vim
-set wildmenu
-
+set termguicolors
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -30,6 +14,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nvie/vim-flake8' " use F7 to run flame8 on file https://vimawesome.com/plugin/vim-flake8
 Plugin 'liuchengxu/space-vim-dark' " https://github.com/liuchengxu/space-vim-dark
+Plugin 'mileszs/ack.vim'
+
+Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'vim-ctrlspace/vim-ctrlspace'
@@ -37,11 +24,32 @@ Plugin 'liuchengxu/space-vim-dark' " https://github.com/liuchengxu/space-vim-dar
 "Plugin 'fatih/vim-go'
 call vundle#end()
 
+set t_Co=256
+set cursorline
+" set background=dark
+set guifont=DejaVu_Sans_Mono_for_Powerline:h12
+" let g:solarized_termtrans = 1
+" colorscheme space-vim-dark
+" let g:solarized_termcolors=256
+"
+" colorscheme onehalflight
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
+" let g:lightline.colorscheme='onehalfdark'
+
+
+set nocompatible
+set hidden
+set path+=**
+set tags=tags.vim
+set wildmenu
+
+
 nnoremap [ :call Flake8()<CR>
 
 "-------------
 let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tmuxline#enabled = 0
+let g:airline#extensions#tmuxline#enabled =0
 
 let g:airline_theme='minimalist'
 set laststatus=2
@@ -73,7 +81,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 
 set mouse=a
-set ttymouse=xterm2
+" set ttymouse=xterm2
 
 " autocomplete speedup
 set complete-=i
