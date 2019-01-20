@@ -11,7 +11,7 @@ alias indexingProject='ctags -R --fields=+l --languages=python --python-kinds=-i
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
-alias indexingProject="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags.vim \$(python -c \"import os, sys; iter_lib=' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)); print '{} {}'.format('./', iter_lib)\")"
+alias indexingProject="ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags.vim \$(python -c \"import os, sys; iter_lib=' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)); print('{} {}'.format('./', iter_lib))\")"
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
@@ -20,7 +20,8 @@ export WORKON_HOME="/Users/$USER/envs/"
 setopt menucomplete
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
 
-alias vim='/usr/local/bin/vim'
+alias vim='/usr/local/bin/nvim'
+alias awk='/usr/local/bin/gawk'
 
 alias dockAddSeparator="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; killall Dock"
 alias myip="ifconfig en0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
