@@ -26,9 +26,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 
-;;(setq doom-theme 'goose)
-(setq doom-theme 'doom-Iosvkem)
-;;(setq doom-theme 'deeper-blue)
+;;(setq doom-theme 'solo-jazz)
+(setq doom-theme 'doom-palenight)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
